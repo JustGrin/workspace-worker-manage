@@ -1,0 +1,47 @@
+// global
+$primaryColor: #5496f2;
+$lightBgColor: #ebeffe;
+$grayBgColor: #f7f8fa; // 灰色背景
+// sidebar
+$menuText: #bfcbd9;
+$menuActiveText: #fff;
+$menuActiveBg: $primaryColor;
+$subMenuActiveText: #fff; //https://github.com/ElemeFE/element/issues/12951
+// $subMenuActiveBg: $primaryColor;
+
+$menuBg: #304156;
+$menuHover: #263445;
+
+$subMenuBg: #1f2d3d;
+$subMenuHover: #001528;
+
+$sideBarWidth: 180px; // 中文宽度
+$sideBarWidthEn: 230px; // 英语宽度
+$hideSideBarWidth: 45px; // 收起后的宽度
+
+// colors
+$infoColor: $primaryColor;
+$errorColor: #ee0a24;
+$successColor: #07c160;
+$warnColor: #ff976a;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveBg: $menuActiveBg;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  // subMenuActiveBg: $subMenuActiveBg;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  primaryColor: $primaryColor;
+  lightBgColor: $lightBgColor;
+  infoColor: $infoColor;
+  errorColor: $errorColor;
+  successColor: $successColor;
+  warnColor: $warnColor;
+}

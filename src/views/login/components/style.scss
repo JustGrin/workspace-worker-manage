@@ -1,0 +1,45 @@
+$bg: #2d3a4b;
+$dark_gray: #889aa4;
+$light_gray: #eee;
+
+.login-form {
+ 
+  background: #fff;
+
+
+  // 登录页面输入框图标
+  // &/deep/ .el-input__prefix,
+  // .el-input__suffix {
+  //   left: 10px;
+  // }
+ 
+
+  .show-pwd {
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  // 短信输入框
+  .note-input {
+    display: flex;
+    & > div {
+      width: 50%;
+    }
+    & > button {
+      width: 50%;
+    }
+  }
+}
+
+.loginBtn {
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 8%;
+  width: 100%;
+}
+
+.footer-btns {
+  text-align: right;
+  padding-top: 10px;
+}

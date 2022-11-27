@@ -1,0 +1,101 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type='file'] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// 菜单
+.el-menu {
+  .el-menu-item.is-active {
+    background-color: $menuActiveBg;
+    color: #fff;
+  }
+}
+
+// table 数据表
+.el-table {
+  .el-table__header {
+    thead {
+      tr {
+        th {
+          background-color: #f7f8fa;
+        }
+      }
+    }
+  }
+  .el-table__body {
+    .el-table__row:nth-of-type(even) {
+      background-color: #fff;
+    }
+  }
+}
+
+// main 组件
+.el-main {
+  // 防止动画的时候 出现滚动
+  overflow-x: hidden;
+}
+
+// form-item
+.el-form {
+  &.r-text {
+    .el-form-item {
+      margin-bottom: 5px;
+       label {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.el-form-item {
+  // lable 后面带冒号
+  label.el-form-item__label::after {
+    content: ':';
+  }
+}
+
+ 

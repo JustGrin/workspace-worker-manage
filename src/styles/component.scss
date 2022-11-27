@@ -1,0 +1,39 @@
+// 自定义的样式组件
+// 自定义卡片的头
+.r-card-header {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  // font-weight: 600;
+  font-size: 16px;
+  .r-left {
+  }
+  .r-right {
+  }
+}
+
+// 自定义
+
+// 自定义 全局footer
+// $sideBarWidth: 150px;
+// $hideSideBarWidth: 45px;
+.r-global-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: calc(100% - #{$sideBarWidth});
+}
+.hideSidebar {
+  // 收起时
+  .r-global-footer {
+    width: calc(100% - #{$hideSideBarWidth});
+  }
+}
+
+.enStyle {
+  // 英语时
+  .r-global-footer {
+    width: calc(100% - #{$sideBarWidthEn});
+  }
+}
